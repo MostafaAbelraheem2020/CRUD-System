@@ -2,7 +2,7 @@
 
 > Simple CRUDS product management system built with HTML, CSS & JavaScript using localStorage during my learning journey. [Demo](https://your-project.vercel.app)
 
-![Cruds System Screenshot](./imgs/Cruds%20System%20Screenshot.png)
+![Cruds System Screenshot](/imgs/Cruds%20System%20Screenshot.png)
 
 ## Quick Overview
 - Single-page UI: [main.html](main.html)
