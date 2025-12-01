@@ -1,0 +1,154 @@
+* {
+  --main-color: #03a9f4;
+  --second-color: #e91e63;
+}
+.container {
+  padding: 0 15px;
+  text-align: center;
+}
+.container .Hedding {
+  color: rgb(60, 60, 63);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.gallary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px 20px;
+  margin: 30px 0;
+}
+.gallary img {
+  width: 100%;
+  height: 150px;
+  background-color: #ff9800;
+  padding: 3px;
+  border: 3px solid #009688;
+}
+.popup-overllay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.popup-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 200px;
+
+  padding: 10px;
+  background-color: white;
+  z-index: 1050;
+}
+.img-titel {
+  height: 30px;
+  padding: 10px auto;
+  background-color: white;
+  margin: 0;
+  text-align: center;
+  color: rgb(99, 65, 65);
+  font-size: 24px;
+}
+.popup-img {
+  width: 100%;
+  height: calc(100% - 30px);
+}
+.close-button {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  background-color: rgb(57, 44, 44);
+  color: white;
+  font-weight: bolder;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* start Tim Line */
+.time-line {
+  padding: 50px 0;
+  background-color: #fff;
+}
+.timeLine-content {
+  background-color: #eee;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+.timeLine-content::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin: -1px;
+  background-color: var(--second-color);
+  width: 2px;
+  height: 100%;
+}
+.timeLine-content .year {
+  margin: 20px auto;
+  background-color: var(--second-color);
+  width: 50px;
+  padding: 5px;
+  color: white;
+  font-size: 18px;
+  border-radius: 11px;
+  z-index: 2;
+  position: relative;
+}
+.timeLine-content .left-content,
+.timeLine-content .right-content {
+  width: calc(50% - 25px);
+  text-align: left;
+  line-height: 1.4;
+  background-color: #fff;
+  padding: 5px 0 5px 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.timeLine-content .left-content {
+  float: left;
+}
+.timeLine-content .right-content {
+  float: right;
+}
+.timeLine-content .left-content h4,
+.timeLine-content .right-content h4 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: var(--second-color);
+}
+.timeLine-content .left-content::before,
+.timeLine-content .right-content::before {
+  content: '';
+  width: 10px;
+  border: 3px solid var(--second-color);
+  height: 10px;
+  position: absolute;
+  border-radius: 50%;
+  top: 15%;
+}
+.timeLine-content .left-content::before {
+  right: -23px;
+}
+.timeLine-content .right-content::before {
+  left: -23px;
+}
+.timeLine-content .left-content p,
+.timeLine-content .right-content p {
+  margin: 0 5px;
+  font-weight: 700;
+  color: #777;
+}
+/* class to clear floeating element frome one line  */
+.clearfix {
+  clear: both;
+}
+
+/* End Tim Line */
