@@ -1,43 +1,41 @@
-# مشروع: Cruds — نظام إدارة منتجات بسيط
+# Cruds — Simple Product Management System
 
-مرحبًا — هذا المشروع هو واجهة بسيطة لنظام CRUD 
----
-قمت بالتطبيق عليه  اثناء فترة التعلم 
+> Simple CRUDS product management system built with HTML, CSS & JavaScript using localStorage during my learning journey. [Demo](https://your-project.vercel.app)
 
+![Cruds System Screenshot](/imgs/Cruds%20System%20Screenshot.png)
 
-(/imgs/Cruds System Screenshot.png)
+## Quick Overview
+- Single-page UI: [main.html](main.html)
+- Core JavaScript files: [js/main.js](js/main.js) (Key functions: `inputchek`, `getsearchmood`, `searchFn`)
+- CSS styles: [css/main.css](css/main.css), [css/normalize.css](css/normalize.css), [css/template-2.css](css/template-2.css), [css/all.min.css](css/all.min.css)
+- Licensed fonts: [Open_Sans/OFL.txt](Open_Sans/OFL.txt), [Open_Sans/README.txt](Open_Sans/README.txt)
+- Assets: `imgs/` and `webfonts/` folders
 
-## عرض سريع للمشروع
-- صفحة واجهة مستخدم واحدة: [`main.html`](main.html)
-- ملفات جافاسكربت أساسية: [`js/main.js`](js/main.js) (دوال مهمة: [`inputchek`](js/main.js), [`getsearchmood`](js/main.js), [`searchFn`](js/main.js))
-- أنماط CSS: [`css/main.css`](css/main.css), [`css/normalize.css`](css/normalize.css), [`css/template-2.css`](css/template-2.css), [`css/all.min.css`](css/all.min.css)
-- خطوط مضمّنة مع ترخيص: [`Open_Sans/OFL.txt`](Open_Sans/OFL.txt) و [`Open_Sans/README.txt`](Open_Sans/README.txt)
-- صور وموارد: مجلد [`imgs/`](imgs) و [`webfonts/`](webfonts)
+## Features
+- Create new products (title, price, taxes, ads, discount, quantity, category)
+- Automatic total price calculation
+- Search by title or category
+- Update and delete products from table
+- Simple, customizable, and easy-to-understand design
 
----
+## How to Run Locally
+1. Clone or download the repository
+2. Open [main.html](main.html) directly in browser or use Live Server extension
+3. Try adding products, searching, updating, or deleting
 
-## الميزات
-- إنشاء منتج جديد (العنوان، السعر، الضرائب، الإعلانات، الخصم، العدد، التصنيف).
-- حساب إجمالي السعر تلقائيًا.
-- البحث بالعنوان أو التصنيف.
-- تحديث وحذف منتجات من الجدول.
-- تصميم بسيط قابل للتعديل وسهل الفهم.
+## Folder Structure
+├── main.html # Main display page
+├── css/ # Styles (main.css, normalize.css)
+├── js/ # App logic (main.js)
+├── Open_Sans/ # Fonts & license (OFL.txt)
+├── imgs/ # Images
+└── webfonts/ # Web fonts
 
----
-
-## كيفية التجربة محليًا
-1. انسخ المستودع أو حمّله محليًا.
-2. افتح الملف [`main.html`](main.html) مباشرة في المتصفح أو استخدم ملحق Live Server لفتح صفحة الواجهة.
-3. جرّب إضافة منتج، البحث، التحديث أو الحذف.
-
----
-
-## هيكل المجلد (مختصر)
-- `main.html` — صفحة العرض الرئيسية
-- `css/` — ملفات الأنماط (انظر: [`css/main.css`](css/main.css), [`css/normalize.css`](css/normalize.css))
-- `js/` — منطق الواجهة (انظر: [`js/main.js`](js/main.js))
-- `Open_Sans/` — ملفات الخطّ وترخيصه (`OFL.txt`)
-- `imgs/`, `webfonts/` — موارد المشروع
+## Technologies Used
+- **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **Storage**: localStorage
+- **Fonts**: Open Sans (OFL licensed)
+- **Icons**: Font Awesome
 
 ---
 
